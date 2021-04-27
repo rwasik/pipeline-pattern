@@ -6,5 +6,6 @@ namespace PipelinePattern.Services
     public interface IPipeService<TPipeModel> : IPipeServiceExecution<TPipeModel>
     {
         IPipeService<TPipeModel> Add(Func<IPipeStep<TPipeModel>> pipeStep);
+        IPipeService<TPipeModel> AddErrorStep(Func<IPipeStep<TPipeModel>> errorStep);
     }
 }
