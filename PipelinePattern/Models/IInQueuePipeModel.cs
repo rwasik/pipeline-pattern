@@ -2,6 +2,6 @@
 {
     public interface IInQueuePipeModel
     {
-        public string InMessage { get; set; }
+        string InMessage { get; set; }
     }
 }

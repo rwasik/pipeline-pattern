@@ -2,6 +2,6 @@
 {
     public interface IOutQueuePipeModel
     {
-        public string OutMessage { get; set; }
+        string OutMessage { get; set; }
     }
 }

@@ -2,6 +2,6 @@
 {
     public interface IQueuePipeModel
     {
-        public string QueueName { get; set; }
+        string QueueName { get; set; }
     }
 }
