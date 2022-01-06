@@ -2,7 +2,7 @@
 
 namespace PipelinePattern.Steps
 {
-    public interface IOutQueuePipeStep<TPipeModel> : IPipeStep<TPipeModel> where TPipeModel : IQueuePipeModel
+    public interface IOutQueuePipeStep<TPipeModel> : IPipeStep<TPipeModel> where TPipeModel : IInQueuePipeModel
     {
     }
 }

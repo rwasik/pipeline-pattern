@@ -5,7 +5,7 @@ using PipelinePattern.Steps;
 
 namespace PipelinePattern.Services
 {
-    public class QueuePipeService<TPipeModel> : PipeServiceBase<TPipeModel> where TPipeModel : IQueuePipeModel
+    public class QueuePipeService<TPipeModel> : PipeServiceBase<TPipeModel> where TPipeModel : IInQueuePipeModel
     {
         protected override IEnumerable<IPipeStep<TPipeModel>> GetFinalSteps(IEnumerable<IPipeStep<TPipeModel>> steps, TPipeModel pipeModel)
         {
